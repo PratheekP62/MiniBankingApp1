@@ -1,0 +1,11 @@
+CREATE DATABASE BANK;
+
+USE BANK;
+
+CREATE TABLE customer (
+    ac_no INT NOT NULL AUTO_INCREMENT,
+    cname VARCHAR(45) UNIQUE NOT NULL,
+    balance INT DEFAULT 1000,
+    pass_code INT NOT NULL,
+    PRIMARY KEY (ac_no)
+);
